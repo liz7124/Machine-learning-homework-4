@@ -25,7 +25,26 @@ This is the result of monte-carlo with 3 triangle. In this section, the time tha
 
 
 ## 2. SARSA
-When run SARSA if we are unlucky, the rectangle will stuck between the minus value, and it will takes long time to converge.
+SARSA is stand for State, Action, Reward, State (next state), Action (next action).
+SARSA is on-policy TD control (policy iteration based). It will learn as it act. The agent might learn bad policy because of Epsilon greedy policy. That's why when run SARSA if we are unlucky, the rectangle will stuck/blocked between the minus value, and it will takes long time to converge.
 
 
 ## 3. Q-Learning
+Q-Learning is off policy TD control (value iteration based). This algorithm can solve the blocked problem that happened in SARSA. Because the policy for actual action in the actual environment is different from the policy that be used to update Q function. So, there are 2 policy: policy for action and policy for learn. In action step use Epsilon greedy policy and in update step use Bellman optimality Equation. Step in Q-Learning are State, Action, Reward, S (next state).
+
+### Results
+This is the results with 2 triangles.
+
+| Episode 24 | Episode 187 |
+|--|--|
+| ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/5-Q-learning/screenshots/3a-ep24.gif) | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/5-Q-learning/screenshots/3a-ep187.gif) |
+
+This is the results with 3 triangles.
+
+| Episode 24 | Episode 187 |
+|--|--|
+| ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/5-Q-learning/screenshots/3b-ep24.gif) | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/5-Q-learning/screenshots/3b-ep187.gif) |
+
+
+
+When we run many times, the results will be different.
