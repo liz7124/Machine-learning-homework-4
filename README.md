@@ -12,11 +12,13 @@ Using Monte-Carlo algorithm, the time that needed to become converge state is va
 
 ### Results
 This is the result of monte-carlo with 2 triangle.
+
 | Episode 9 | Episode 52 |
 |--|--|
 | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/3-monte-carlo/screenshots/1a-ep9.gif) | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/3-monte-carlo/screenshots/1a-ep52.gif) |
 
 This is the result of monte-carlo with 3 triangle. In this section, the time that needed to become converge state more longer than previous section with only 2 triangle. 
+
 | Episode 9 | 196 |
 |--|--|
 | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/3-monte-carlo/screenshots/1b-ep9.gif) | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/3-monte-carlo/screenshots/1b-ep196.gif) |
