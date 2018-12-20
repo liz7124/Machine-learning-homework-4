@@ -1,5 +1,7 @@
-# Homework 4 - Machine Learning
+# Homework 4 (Final Exam) - Machine Learning
 This repository provide answer for machine learning class homework 4 (Final Exam). The goal is to train agent to play **Grid World** using Monte-Carlo, SARSA, and Q-Learning. This code is modification from [RLCode Reinforcement Learning](https://github.com/rlcode/reinforcement-learning).
+
+If you want to see the original code, find `original_code` folder in each folder of `3-monte-carlo, 4-SARSA, 5-Q-learning`.
 
 ## 1. Monte-Carlo
 The Monte Carlo method for reinforcement learning learns directly from episodes of experience.
@@ -58,7 +60,5 @@ This is the results with 3 triangles.
 | Episode 24 | Episode 187 |
 |--|--|
 | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/5-Q-learning/screenshots/3b-ep24.gif) | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/5-Q-learning/screenshots/3b-ep187.gif) |
-
-
 
 When we run many times, the results will be different.
