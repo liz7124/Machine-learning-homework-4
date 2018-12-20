@@ -28,6 +28,20 @@ This is the result of monte-carlo with 3 triangle. In this section, the time tha
 SARSA is stand for State, Action, Reward, State (next state), Action (next action).
 SARSA is on-policy TD control (policy iteration based). It will learn as it act. The agent might learn bad policy because of Epsilon greedy policy. That's why when run SARSA if we are unlucky, the rectangle will stuck/blocked between the minus value, and it will takes long time to converge.
 
+This is the results with 2 triangle. In SARSA the more episode we run will not guarantee it will more stable. Because sometimes after it reach converge state, after some episode it will get stuck/blocked. In this case, in episode 34, the agent stuck on the corner and it will takes long time to converge.
+
+| Episode 19 | Episode 34 |
+|--|--|
+| ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/4-sarsa/screenshots/2a-ep19.gif) | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/4-sarsa/screenshots/2a-ep-34.PNG) |
+
+
+This is the results with 3 triangle. Every time we run it, it will have different results.
+
+| Episode 22 | Episode 37 |
+|--|--|
+| ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/4-sarsa/screenshots/2b-ep22.gif) | ![enter image description here](https://github.com/liz7124/Machine-learning-homework-4/blob/master/4-sarsa/screenshots/2b-ep37.gif) |
+
+
 
 ## 3. Q-Learning
 Q-Learning is off policy TD control (value iteration based). This algorithm can solve the blocked problem that happened in SARSA. Because the policy for actual action in the actual environment is different from the policy that be used to update Q function. So, there are 2 policy: policy for action and policy for learn. In action step use Epsilon greedy policy and in update step use Bellman optimality Equation. Step in Q-Learning are State, Action, Reward, S (next state).
